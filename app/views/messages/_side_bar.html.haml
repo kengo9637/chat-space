@@ -1,0 +1,17 @@
+.side-bar
+  .side-bar__user-name
+    .top-items
+      .top-items__name 
+        name
+      .top-items__icon
+        = link_to "#" do
+          =icon('far', 'edit', class: 'top-items__icon__btn-a')
+          %span<>
+        = link_to "#" do
+          =icon('fas', 'cog', class: 'top-items__icon__btn-b')
+  .side-bar__group-list
+    .list-box
+      .list-box__name
+        techexpert
+      .list-box__message
+        メッセージはありません
