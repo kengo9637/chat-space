@@ -17,6 +17,9 @@
   &__group-list {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
+    &__link {
+      text-decoration: none;
+    }
   }
 }
 
