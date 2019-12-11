@@ -1,9 +1,9 @@
-.message__name
+.message__name{"data-message_id": "#{message.id}"}
   .message__name__box
     = message.user.name
   .message__name__time
     = message.created_at.strftime("%Y/%m/%d %H:%M")
-.message__text
+.message__text{"data-message_id": "#{message.id}"}
   - if message.text.present?
     = message.text
   = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
